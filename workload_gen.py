@@ -11,7 +11,8 @@ def run(context):
     logger.info('{}'.format(workload.params['greeting']))
     logger.info('I\'m workload generator {}'.format(workload.name))
 #    logger.info('The resource endpoint is {}'.format(my_resource))
-    return result_description
+    result = {"result": "result"}
+    return result
 
 def clean(context):
     pass
